@@ -1,4 +1,4 @@
-package com.example.rxjavatutorial
+package com.example.rxjavatutorial.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
