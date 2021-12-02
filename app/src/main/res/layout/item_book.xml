@@ -10,6 +10,7 @@
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -19,7 +20,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            app:imageUrl="@{volumeInfo.volumeInfo.imageLinks.smallThumbnail}" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -31,6 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:text="@{volumeInfo.volumeInfo.title}"
                 android:textColor="@color/purple_700"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -40,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:text="@{volumeInfo.volumeInfo.publisher}"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -49,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:maxLines="3"
+                android:text="@{volumeInfo.volumeInfo.description}"
                 android:textColor="#d5d5d5"
                 android:textSize="14sp" />
 
